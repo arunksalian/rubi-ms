@@ -10,6 +10,8 @@ node {
   }
   
   stage ('Docker build') {
+    sh 'pwd'
+    sh 'ls'
     sh 'docker build -t arunksalian/$version .' 
   }
 }
