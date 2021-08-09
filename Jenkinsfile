@@ -10,6 +10,6 @@ node {
   }
   
   stage ('Docker build') {
-    sh 'docker build -t arunksalian/account-ms:0.0.6-SNAPSHOT .' 
+    sh 'docker build -t arunksalian/$version .' 
   }
 }
