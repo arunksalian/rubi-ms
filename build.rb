@@ -1,7 +1,7 @@
 
 pipeline {
   agent {
-    docker {image : 'youmoni/jdk11'}
+        docker { image 'node:14-alpine' }
   }
   stages {
      stage('Checkout') {
@@ -14,7 +14,12 @@ pipeline {
       steps {
         sh 'mvn clean package'
       }
-      
+    }
+    
+    stage ('Docker build') {
+      steps {
+        sh 'docker build -t arunksalian/account-ms:
+      }
     }
   }
 }
