@@ -2,11 +2,16 @@
 pipeline {
   stages {
      stage('Checkout') {
-      git 'https://github.com/arunksalian/account-ms.git'
+       steps {
+         git 'https://github.com/arunksalian/account-ms.git'
+       }
      }
 
     stage ('Compile and package') {
-      sh 'mvn clean package'
+      steps {
+        sh 'mvn clean package'
+      }
+      
     }
   }
 }
