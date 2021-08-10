@@ -1,5 +1,8 @@
 
 pipeline {
+  agent {
+    docker {image : 'youmoni/jdk11'}
+  }
   stages {
      stage('Checkout') {
        steps {
