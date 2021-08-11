@@ -12,7 +12,7 @@ pipeline {
 
     stage ('Compile and package') {
       steps {
-        sh 'mvn clean package'
+        sh '/media/hd1/Xtras/apache-maven-3.8.1/bin/mvn clean package'
       }
     }
     
