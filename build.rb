@@ -1,7 +1,7 @@
 
 pipeline {
   
-  agent none
+  agent any
   environment {
     JAVA_HOME = '/usr/lib/jvm/jdk-15.0.1'
   }
