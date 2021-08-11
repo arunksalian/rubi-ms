@@ -21,7 +21,7 @@ pipeline {
     
     stage ('Docker build') {
       steps {
-        sh 'docker build -t arunksalian/account-ms:$version'
+        sh 'docker build -t arunksalian/account-ms:${version}'
       }
     }
   }
