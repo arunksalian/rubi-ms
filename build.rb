@@ -2,6 +2,9 @@
 pipeline {
   
   agent { docker { image 'maven:3.3.3' } }
+  environment {
+    JAVA_HOME = '/usr/lib/jvm/java-1.11.0-openjdk-amd64'
+  }
     
   stages {
      stage('Checkout') {
