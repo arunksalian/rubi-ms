@@ -1,7 +1,7 @@
 
 pipeline {
   
-  agent { docker { image 'maven:3.3.3' } }
+  agent none
   environment {
     JAVA_HOME = '/usr/lib/jvm/jdk-15.0.1'
   }
