@@ -1,8 +1,9 @@
 
 pipeline {
   agent {
-        docker { image 'youmoni/jdk11' }
+        agent { docker { image 'maven:3.3.3' } }
   }
+  
   stages {
      stage('Checkout') {
        steps {
